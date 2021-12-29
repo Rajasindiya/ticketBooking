@@ -1,5 +1,5 @@
 .welcome-page {
-  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/fa49a598375621.5eda88757d5bc.png");
+  background-image: url("/assets/bus4.jpg");
   background-position: top;
   background-position-x: center;
   background-position-y: center;
@@ -30,7 +30,7 @@
         padding-left: 5px;
         width: 95%;
         border-radius: 10%;
-        background: rgba( 231, 222, 222, 0.8 );
+        background: rgba(222, 225, 231, 0.8);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur( 2px );
         -webkit-backdrop-filter: blur( 2px );
@@ -44,8 +44,9 @@
       width: 30%;
       border: none;
       font-size: 20px;
+      color: white;
       font-weight: 600;
-      background-color: #CB342E;
+      background-color: rgb(45,60,115);
       border-radius: 10%;
     }
   }
@@ -138,4 +139,30 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .right-content {
   padding: 10px;
+}
+
+
+.editor-stage .snow {
+  height:50px;
+  background: #fff;
+}
+.snow{
+  position:fixed;
+  pointer-events:none;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  height:100vh;
+  background-image: url('https://s3-eu-west-1.amazonaws.com/static-ressources/s1.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s2.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s3.png');
+  z-index:100;
+  -webkit-animation: snow 10s linear infinite;
+  -moz-animation: snow 10s linear infinite;
+  -ms-animation: snow 10s linear infinite;
+  animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
