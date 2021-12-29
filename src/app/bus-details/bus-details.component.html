@@ -1,0 +1,40 @@
+<div class="busList">
+    <div class="bus">
+        <div class="title">
+            <p><strong>Bus Name</strong></p>
+        </div>
+        <div class="title">
+            <p>Departure</p>
+        </div>
+        <div class="title">
+            <p>Duration</p>
+        </div>
+        <div class="title">
+            <p>Arrival</p>
+        </div>
+        <div class="title">
+            <p>Fare</p>
+        </div>
+    </div>
+    <div class="buses" *ngFor="let bus of busLists">
+        <div class="bus-name">
+            <p><strong>{{bus.name}}</strong></p>
+            <p><strong>{{bus.type}}</strong></p>
+        </div>
+        <div class="bus-name">
+            <p>{{bus.boarding_time}}</p>
+            <p><strong>{{bus.boardingPoint}}</strong></p>
+        </div>
+        <div class="bus-name">
+            <p>{{bus.hours}}</p>
+        </div>
+        <div class="bus-name">
+            <p>{{bus.drop_time}}</p>
+            <p><strong>{{bus.droppingPoint}}</strong></p>
+        </div>
+        <div class="bus-name">
+            <p>{{bus.fare}}</p>
+            <p><button routerLink="/busList/seat">View Seats</button></p>
+        </div>
+    </div>
+</div>

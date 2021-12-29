@@ -1,0 +1,46 @@
+$height: 30px;
+
+.busList {
+    border: 1px solid rgb(62, 62, 209);
+    margin: 20px;
+    margin-top: 80px;
+    transition-duration: 0.3s;
+    background: rgb(218, 145, 10);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    .bus {
+        display: flex;
+        height: $height;
+        padding-left: 35px;
+        justify-content: space-between;
+
+        .title {
+            height: $height;
+            font-weight: 700;
+            width: 300px;
+        }
+    }
+
+    .buses {
+        display: flex;
+        margin: $height;
+        height: 100px;
+        padding: 10px;
+        background: rgba( 255, 255, 255, 1 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        justify-content: space-between;
+
+        .bus-name {
+            height: 80px;
+            width: 300px;
+        }
+    }
+}

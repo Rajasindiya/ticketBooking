@@ -1,0 +1,36 @@
+$base-color:
+ #F49A1A
+#FCC018
+#1A345B
+#FFFFFF;
+.admin-panel {
+    display: flex;
+    width: 97vw;
+    height: 50px;
+    position: fixed;
+    top:0px;
+    padding-left: 30px;
+    font-weight: 700;
+    z-index: 10;
+    justify-content: space-between;
+    background: rgb(244,154,26);
+background: linear-gradient(90deg, rgba(244,154,26,1) 0%, rgba(252,192,24,1) 50%, rgba(244,154,26,1) 100%);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    align-items: center;
+
+    .bus-name{
+        color: white;
+        font-size: 28px;
+        font-weight: 700;
+        font-family: 'Luckiest Guy', cursive;
+    }
+    .login-panel span {
+        padding-right: 20px;
+
+        img {
+            height: 20px;
+            width: 20px;
+        }
+    }
+}
