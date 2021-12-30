@@ -15,11 +15,14 @@
         <div class="title">
             <p>Fare</p>
         </div>
+        <div class="title">
+            <p>Seats Available</p>
+        </div>
     </div>
     <div class="buses" *ngFor="let bus of busLists">
         <div class="bus-name">
             <p><strong>{{bus.name}}</strong></p>
-            <p><strong>{{bus.type}}</strong></p>
+            <p>{{bus.type}}</p>
         </div>
         <div class="bus-name">
             <p>{{bus.boarding_time}}</p>
@@ -31,6 +34,9 @@
         <div class="bus-name">
             <p>{{bus.drop_time}}</p>
             <p><strong>{{bus.droppingPoint}}</strong></p>
+        </div>
+        <div class="bus-name">
+            <p>{{bus.fare}}</p>
         </div>
         <div class="bus-name">
             <p>{{bus.fare}}</p>

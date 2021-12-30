@@ -1,0 +1,9 @@
+
+    [{ "name": "SRT","boardingPoint": "Salem","boarding_time": "09.00", "hours": "8hr", "drop_time": "05.00", "droppingPoint": "Namakkal","type":"Non A/C Semi-Sleeper" ,"fare": 900 },
+    { "name": "YBM","boardingPoint": "Trichy","boarding_time": "09.00", "hours": "8hr", "drop_time": "05.00", "droppingPoint": "Namakkal","type":"A/C Sleeper", "fare": 900 }, 
+    { "name": "PARVEEN","boardingPoint": "Madhurai","boarding_time": "09.00", "hours": "8hr", "drop_time": "05.00", "droppingPoint": "Namakkal","type":"A/C Sleeper", "fare": 900 },
+    { "name": "KPN","boardingPoint": "Kanyakumari","boarding_time": "09.00", "hours": "8hr", "drop_time": "05.00", "droppingPoint": "Namakkal", "type":"A/C Sleeper","fare": 900 },
+    { "name": "SRM","boardingPoint": "Bangalore","boarding_time": "09.00", "hours": "8hr", "drop_time": "05.00", "droppingPoint": "Namakkal","type":"A/C Sleeper","fare": 900 }, 
+    { "name": "SRS","boardingPoint": "Coimbatore","boarding_time": "09.00", "hours": "8hr", "drop_time": "05.00", "droppingPoint": "Namakkal","type":"A/C Sleeper", "fare": 900 }]
+
+    

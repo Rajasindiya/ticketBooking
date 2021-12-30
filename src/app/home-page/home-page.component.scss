@@ -1,5 +1,5 @@
 .welcome-page {
-  background-image: url("/assets/bus4.jpg");
+  background-image: url("/assets/bus2.jpg");
   background-position: top;
   background-position-x: center;
   background-position-y: center;
@@ -9,6 +9,15 @@
   justify-content: center;
   display: flex;
   box-sizing: border-box;
+
+
+  img {
+    height: 40px;
+    width: 30px;
+    margin: 3px;
+    padding: 0px 5px 0px 5px;
+    background: none;
+  }
 
   .search {
     margin-top: 50px;
@@ -29,11 +38,14 @@
         height: 40px;
         padding-left: 5px;
         width: 95%;
-        border-radius: 10%;
+        font-size: 15px;
+        font-weight: 600;
+        color: rgb(17, 17, 17);
+        border-radius: 5%;
         background: rgba(222, 225, 231, 0.8);
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 2px );
-        -webkit-backdrop-filter: blur( 2px );
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
         border-radius: 10px;
         &:focus-within {
           outline: none;
@@ -46,27 +58,42 @@
       font-size: 20px;
       color: white;
       font-weight: 600;
-      background-color: rgb(45,60,115);
-      border-radius: 10%;
+      background-color: rgb(45, 60, 115);
+      border-radius: 10px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: whitesmoke;
+        color: black;
+      }
     }
   }
 }
 .offer-panel {
-    
   margin: 30px;
   padding: 20px;
   justify-content: space-between;
   transition-duration: 0.3s;
-  background: rgba( 255, 255, 255, 1 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 20px );
--webkit-backdrop-filter: blur( 20px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-  
-  &:hover{
-      box-shadow: 0px 0px 16px 3px #a0a7a8;
-      transform:scale(1.01);
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  img {
+    box-shadow: 0 8px 32px 0 rgba(135, 31, 45, 0.37);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  img:hover {
+    box-shadow: 0 8px 32px 0 rgba(135, 31, 45, 0.37);
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 16px 3px #a0a7a8;
+    //   transform:scale(1.01);
   }
   .names {
     font-size: 30px;
@@ -88,12 +115,12 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   justify-content: space-between;
   display: flex;
   transition-duration: 0.3s;
-  background: rgba( 255, 255, 255, 1 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 20px );
--webkit-backdrop-filter: blur( 20px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 span {
@@ -121,12 +148,12 @@ span {
   border: 1px solid #a79d9d;
   padding: 20px;
   transition-duration: 0.3s;
-  background: rgba( 255, 255, 255, 1 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 20px );
--webkit-backdrop-filter: blur( 20px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .heading {
   display: block;
@@ -141,28 +168,3 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   padding: 10px;
 }
 
-
-.editor-stage .snow {
-  height:50px;
-  background: #fff;
-}
-.snow{
-  position:fixed;
-  pointer-events:none;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  height:100vh;
-  background-image: url('https://s3-eu-west-1.amazonaws.com/static-ressources/s1.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s2.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s3.png');
-  z-index:100;
-  -webkit-animation: snow 10s linear infinite;
-  -moz-animation: snow 10s linear infinite;
-  -ms-animation: snow 10s linear infinite;
-  animation: snow 10s linear infinite;
-}
-@keyframes snow {
-  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-}

@@ -5,7 +5,7 @@ $base-color:
 #FFFFFF;
 .admin-panel {
     display: flex;
-    width: 97vw;
+    width: 98vw;
     height: 50px;
     position: fixed;
     top:0px;
@@ -16,22 +16,27 @@ $base-color:
     justify-content: space-between;
   //  background: #141E30;
    // background: #2B3F74;
-   background: linear-gradient(90deg, #000 0%,rgba(252,192,24,1) 50%, rgba(244,154,26,1) 100%);
+   background: linear-gradient(90deg, rgba(244,154,26,1)  0%,rgba(252,192,24,1) 50%, rgba(244,154,26,1) 100%);
 //background: linear-gradient(90deg, rgba(244,154,26,1) 0%, rgba(252,192,24,1) 50%, rgba(244,154,26,1) 100%);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
     align-items: center;
 
-    .bus-name{
-        color: white;
-        font-size: 28px;
+    .bus-name,span{
+        font-size: 18px;
         font-weight: 700;
-        font-family: 'Luckiest Guy', cursive;
+
+        &:hover{
+            cursor:pointer;
+        }
 
         img{
             border-radius: 3%;
             height: 40px;
             width: 120px;
+            border-radius:0px 100px 50px 100px;
+            transform: scale(1.1);
+            backdrop-filter: blur(00px);
             
         }
     }

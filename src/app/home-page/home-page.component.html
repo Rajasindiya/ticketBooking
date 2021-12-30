@@ -1,71 +1,72 @@
-<div class="welcome-page">
-    <div class="search">
-        
-        <div class="from">
-            <input class="fromInput" placeholder="From" type="text">
+
+    <div class="welcome-page">
+        <div class="search">
+
+            <div class="from">
+                <input class="fromInput" [(ngModel)]='from' placeholder="From">
+            </div>
+            <span><img src="assets/interchange.png" (click)="exchange()" alt="two arrow icon"></span>
+            <div class="from">
+                <input class="fromInput" placeholder="To" [(ngModel)]='to' type="text" ng-required="true">
+            </div>
+            <div class="from">
+                <input class="date" type="date">
+            </div>
+            <button routerLink="/busList">Search</button>
         </div>
-        <div class="from">
-            <input class="fromInput" placeholder="To" type="text">
-        </div>
-        <div class="from">
-            <input class="date" type="date">
-        </div>
-        <button routerLink="/busList">Search</button>
-    </div>
-    <div class="snow">
-    </div>
     </div>
 
 
-<div class="offer-panel">
-    <span class="names">Bus4U Offers</span>
-    <img class="class" src="/assets/offer1.png">
-    <img class="class" src="/assets/offer2.png">
-    <img class="class" src="/assets/offer3.png">
-</div>
-<div class="about">
-    <div><img class="icon" src="/assets/routes.jpeg">
-        <span class="name"><strong>100000 Routes</strong></span>
+    <div class="offer-panel">
+        <span class="names">Bus4U Offers</span>
+        <img class="class" src="/assets/offer1.png">
+        <img class="class" src="/assets/offer2.png">
+        <img class="class" src="/assets/offer3.png">
     </div>
-    <div><img class="icon" src="/assets/ticket.png">
-        <span class="name"><strong>Instant E-Ticket & Refund</strong></span>
+    <div class="about">
+        <div><img class="icon" src="/assets/routes.jpeg">
+            <span class="name"><strong>100000 Routes</strong></span>
+        </div>
+        <div><img class="icon" src="/assets/ticket.png">
+            <span class="name"><strong>Instant E-Ticket & Refund</strong></span>
+        </div>
+        <div><img class="icon" src="/assets/happyCustomer.png">
+            <span class="name"><strong>3 Crore Happy Customer</strong></span>
+        </div>
+        <div><img class="icon" src="/assets/customerCare.png">
+            <span class="name"><strong>24/7 Customer Care</strong></span>
+        </div>
     </div>
-    <div><img class="icon" src="/assets/happyCustomer.png">
-        <span class="name"><strong>3 Crore Happy Customer</strong></span>
+    <div class="infos">
+        <h1>COVID-19 Related Travel Advisory</h1>
+        <div class="info">
+            <span class="left-content">
+                <p>Bus4U recommends that every passenger must follow the Covid Safety Guidelines to ensure a safe and
+                    comfortable travel experience during bus journeys. Strict safety protocol can ensure that we end the
+                    pandemic soon. Make sure you wear a double mask, use hand sanitiser and maintain strict social
+                    distancing while travelling. And yes, look out for Safe-T Bus Operators while booking. Safe-T Bus
+                    Partners are handpicked, validated bus operators who follow the Covid safety protocols to ensure the
+                    safety of you and your family.
+                    Our travel updates summarize changes reported by various sources on bus and train transportation
+                    services. Consider this information as a guide only and please refer to the State-wise COVID-19
+                    Travel
+                    Guidelines in India links for further information on travel restrictions and news updates.
+                    Follow 6 simple steps to protect yourself during Bus travel</p>
+                <img src="/assets/covid-precausion.png">
+            </span>
+            <span class="right-content">
+                <img src="/assets/safe.png">
+            </span>
+        </div>
     </div>
-    <div><img class="icon" src="/assets/customerCare.png">
-        <span class="name"><strong>24/7 Customer Care</strong></span>
+    <div class="infos">
+        <div class="info">
+            <span class="left-content">
+                <img src="/assets/girl.png">
+            </span>
+            <span class="right-content">
+                <h1>Install Bus4U App</h1>
+                <h1>Make a travel lot of fun</h1>
+            </span>
+        </div>
     </div>
-</div>
-<div class="infos">
-    <h1>COVID-19 Related Travel Advisory</h1>
-    <div class="info">
-        <span class="left-content">
-            <p>Bus4U recommends that every passenger must follow the Covid Safety Guidelines to ensure a safe and
-                comfortable travel experience during bus journeys. Strict safety protocol can ensure that we end the
-                pandemic soon. Make sure you wear a double mask, use hand sanitiser and maintain strict social
-                distancing while travelling. And yes, look out for Safe-T Bus Operators while booking. Safe-T Bus
-                Partners are handpicked, validated bus operators who follow the Covid safety protocols to ensure the
-                safety of you and your family.
-                Our travel updates summarize changes reported by various sources on bus and train transportation
-                services. Consider this information as a guide only and please refer to the State-wise COVID-19 Travel
-                Guidelines in India links for further information on travel restrictions and news updates.
-                Follow 6 simple steps to protect yourself during Bus travel</p>
-            <img src="/assets/covid-precausion.png">
-        </span>
-        <span class="right-content">
-            <img src="/assets/safe.png">
-        </span>
-    </div>
-</div>
-<div class="infos">
-    <div class="info">
-        <span class="left-content">
-            <img src="/assets/girl.png">
-        </span>
-        <span class="right-content">
-            <h1>Install Bus4U App</h1>
-            <h1>Make a travel lot of fun</h1>
-        </span>
-    </div>
-</div>
