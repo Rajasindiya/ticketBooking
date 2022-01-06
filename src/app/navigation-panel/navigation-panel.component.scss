@@ -1,52 +1,71 @@
-$base-color:
- #F49A1A
-#FCC018
-#1A345B
-#FFFFFF;
+$base-color: #f49a1a #fcc018 #1a345b #ffffff;
 .admin-panel {
-    display: flex;
-    width: 98vw;
-    height: 50px;
-    position: fixed;
-    top:0px;
-    padding-top: 5px;
-    padding-left: 30px;
+  display: flex;
+  width: 98vw;
+  height: 50px;
+  position: fixed;
+  top: 0px;
+  padding-top: 5px;
+  padding-left: 30px;
+  font-weight: 700;
+  z-index: 10;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgba(244, 154, 26, 1) 0%,
+    rgba(252, 192, 24, 1) 50%,
+    rgba(244, 154, 26, 1) 100%
+  );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  align-items: center;
+
+  .bus-name,
+  span {
+    font-size: 18px;
     font-weight: 700;
-    z-index: 10;
-    justify-content: space-between;
-  //  background: #141E30;
-   // background: #2B3F74;
-   background: linear-gradient(90deg, rgba(244,154,26,1)  0%,rgba(252,192,24,1) 50%, rgba(244,154,26,1) 100%);
-//background: linear-gradient(90deg, rgba(244,154,26,1) 0%, rgba(252,192,24,1) 50%, rgba(244,154,26,1) 100%);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    align-items: center;
 
-    .bus-name,span{
-        font-size: 18px;
-        font-weight: 700;
-
-        &:hover{
-            cursor:pointer;
-        }
-
-        img{
-            border-radius: 3%;
-            height: 40px;
-            width: 120px;
-            border-radius:0px 100px 50px 100px;
-            transform: scale(1.1);
-            backdrop-filter: blur(00px);
-            
-        }
+    &:hover {
+      cursor: pointer;
     }
 
-    .login-panel span {
-        padding-right: 20px;
-
-        img {
-            height: 20px;
-            width: 20px;
-        }
+    img {
+      border-radius: 3%;
+      height: 40px;
+      width: 120px;
+      border-radius: 0px 100px 50px 100px;
+      transform: scale(1.1);
+      backdrop-filter: blur(00px);
     }
+  }
+
+  .login-panel span {
+    padding-right: 20px;
+
+    img {
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  span {
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 3px;
+      transform: scaleX(0);
+      background-color: blue;
+
+      transition: transform 0.3s;
+    }
+  }
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+    }
+  }
 }

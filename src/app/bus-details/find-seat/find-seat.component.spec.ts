@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ViewSeatsComponent } from './view-seats.component';
+import { FindSeatComponent } from './find-seat.component';
 
-describe('ViewSeatsComponent', () => {
-  let component: ViewSeatsComponent;
-  let fixture: ComponentFixture<ViewSeatsComponent>;
+describe('FindSeatComponent', () => {
+  let component: FindSeatComponent;
+  let fixture: ComponentFixture<FindSeatComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ViewSeatsComponent ]
+      declarations: [ FindSeatComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ViewSeatsComponent);
+    fixture = TestBed.createComponent(FindSeatComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

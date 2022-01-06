@@ -3,5 +3,8 @@ body {
   font-family: 'Poppins',sans-serif;
   padding: 0px;
   margin: 0px;
-  background: linear-gradient(90deg, rgba(244,154,26,1) 0%, rgba(252,192,24,1) 50%, rgba(244,154,26,1) 100%);
+ background: linear-gradient(90deg, rgba(244,154,26,1) 0%, rgba(252,192,24,1) 50%, rgba(244,154,26,1) 100%);
+ overflow: hidden;
+//  background-color: #FDCB38;
+ height: 100%;
 }

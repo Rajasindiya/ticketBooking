@@ -13,6 +13,9 @@ $height: 30px;
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  display: block;
+  height: 90vh;
+  overflow-y: scroll;
 
   .bus {
     display: flex;
@@ -33,20 +36,23 @@ $height: 30px;
     height: 100px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.75);
-    // background: #EFC534;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    // backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(76, 84, 197, 0.37);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     justify-content: space-between;
+  //  backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 1);
+   // border-radius: px;
+   border: none;
+    box-shadow: 0px 35px 68px 0px rgba(29, 43, 95, 0.5),
+      inset 0px -8px 16px 0px rgba(29, 43, 95, 0.6),
+      inset 0px 11px 28px 0px rgb(255, 255, 255);
 
     &:hover {
-        cursor: pointer;
-        background-color: rgba(0, 0, 0, 0.75);
-        color: white;
-       // background-color: rgb(238, 193, 68);
-        box-shadow: 0px 0px 10px 3px #a0a7a8;
-      transform:scale(1.02);
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.884);
+      box-shadow: 0px 0px 5px 2px #a0a7a8;
+      transform: scale(1.02);
     }
     .bus-name {
       height: 80px;
@@ -55,25 +61,68 @@ $height: 30px;
       padding-right: 47px;
       text-align: center;
 
-      button{
-          border-radius: 15px;
-          background-color:rgb(199, 78, 42) ;
-          font-size: 14px;
-          font-weight: 900;
-          border: none;
-          height: 40px;
-          width: 120px;
+      button {
+        border-radius: 15px;
+        background-color: #eec634;
+        font-size: 14px;
+        font-weight: 900;
+        border: none;
+        height: 40px;
+        width: 120px;
 
-          &:hover{
-              background-color: #92BA36;
-              color: rgb(8, 2, 39);
-              cursor: pointer;
-            
-          }
+        &:hover {
+          background-color: #92ba36;
+          color: rgb(8, 2, 39);
+          cursor: pointer;
+        }
       }
     }
   }
-  .buses:hover .bus-name {
-    color: white;
 }
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #92bd36;
+  border-radius: 10px;
+}
+
+.thirdComponent {
+  position: absolute;
+  width: 88vw;
+  height: 12vh;
+  background-color: rgba(255, 255, 255, 0.336);
+ // backdrop-filter: blur(500px);
+  padding: 10px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+ // backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 23px;
+  box-shadow: 0px 35px 68px 0px rgba(29, 43, 95, 0.5),
+    inset 0px -8px 16px 0px rgba(29, 43, 95, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+
+  button {
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    background-color: #efc534;
+    font-weight: 700;
+  }
+
+  .cost {
+    background-color: rgba(210, 105, 30, 0.795);
+    border-radius: 10px;
+    padding: 10px;
+  }
 }

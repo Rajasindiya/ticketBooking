@@ -20,7 +20,9 @@
         </div>
     </div>
     <div class="buses" *ngFor="let bus of busLists">
+
         <div class="bus-name">
+
             <p><strong>{{bus.name}}</strong></p>
             <p>{{bus.type}}</p>
         </div>
@@ -39,8 +41,16 @@
             <p>{{bus.fare}}</p>
         </div>
         <div class="bus-name">
-            <p>{{bus.fare}}</p>
-            <p><button routerLink="/busList/seat">View Seats</button></p>
+            <p>{{bus.seat}}</p>
+            <p><button (click)="bookBus(bus)">Book Now</button></p>
         </div>
+        <div class="thirdComponent" *ngIf="bus.name === selectedBus">
+            <button (click)="acBus(acCost)">Ac <div #acCost>{{bus.fare * 2}}</div></button>
+            <button (click)="nonAcBus(nonAcCost)">Non Ac<div #nonAcCost>{{bus.fare }}</div></button>
+            <app-find-seat [input]=seatingCost (output)="viewCost($event)"></app-find-seat>
+            <div class="cost">Make Payment ₹ {{totalCost}}</div>
+        </div>
+
     </div>
+
 </div>

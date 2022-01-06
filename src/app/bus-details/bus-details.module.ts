@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { BusDetailsRoutingModule } from './bus-details-routing.module';
 import { BusDetailsComponent } from './bus-details.component';
-import { ViewSeatsComponent } from './view-seats/view-seats.component';
+import { FindSeatComponent } from './find-seat/find-seat.component';
 
 
 @NgModule({
   declarations: [
     BusDetailsComponent,
-    ViewSeatsComponent
+    FindSeatComponent
   ],
   imports: [
     CommonModule,

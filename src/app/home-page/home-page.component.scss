@@ -1,4 +1,9 @@
-.welcome-page {
+// .container{
+//     height: 100%;
+//     overflow: scroll;
+//   }
+  .welcome-page {
+      
   background-image: url("/assets/bus2.jpg");
   background-position: top;
   background-position-x: center;
@@ -47,8 +52,10 @@
         backdrop-filter: blur(2px);
         -webkit-backdrop-filter: blur(2px);
         border-radius: 10px;
-        &:focus-within {
+
+        &:focus {
           outline: none;
+          background-color:  rgb(250, 247, 248);
         }
       }
     }
@@ -63,7 +70,7 @@
 
       &:hover {
         cursor: pointer;
-        background-color: whitesmoke;
+        background-color: rgb(53, 113, 128);
         color: black;
       }
     }
@@ -86,6 +93,7 @@
   }
   img:hover {
     box-shadow: 0 8px 32px 0 rgba(135, 31, 45, 0.37);
+    transform: scale(1.02);
     border-radius: 10px;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -167,4 +175,23 @@ span {
 .right-content {
   padding: 10px;
 }
+
+.container{
+  // margin-top: 60px;
+  height: 98vh;
+  overflow-y: scroll;
+}
+  ::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #4E4F85;
+    border-radius: 10px;
+  }
+  
 

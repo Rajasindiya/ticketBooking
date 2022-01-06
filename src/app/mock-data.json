@@ -1,9 +1,9 @@
 
-    [{ "name": "SRT","boardingPoint": "Salem","boarding_time": "09.00", "hours": "8hr", "drop_time": "05.00", "droppingPoint": "Namakkal","type":"Non A/C Semi-Sleeper" ,"fare": 900 },
-    { "name": "YBM","boardingPoint": "Trichy","boarding_time": "09.00", "hours": "8hr", "drop_time": "05.00", "droppingPoint": "Namakkal","type":"A/C Sleeper", "fare": 900 }, 
-    { "name": "PARVEEN","boardingPoint": "Madhurai","boarding_time": "09.00", "hours": "8hr", "drop_time": "05.00", "droppingPoint": "Namakkal","type":"A/C Sleeper", "fare": 900 },
-    { "name": "KPN","boardingPoint": "Kanyakumari","boarding_time": "09.00", "hours": "8hr", "drop_time": "05.00", "droppingPoint": "Namakkal", "type":"A/C Sleeper","fare": 900 },
-    { "name": "SRM","boardingPoint": "Bangalore","boarding_time": "09.00", "hours": "8hr", "drop_time": "05.00", "droppingPoint": "Namakkal","type":"A/C Sleeper","fare": 900 }, 
-    { "name": "SRS","boardingPoint": "Coimbatore","boarding_time": "09.00", "hours": "8hr", "drop_time": "05.00", "droppingPoint": "Namakkal","type":"A/C Sleeper", "fare": 900 }]
+[{ "name": "SRT","boardingPoint": "Chennai","boarding_time": "06.00", "hours": "8hr", "drop_time": "16.00", "droppingPoint": "Namakkal","type":" Semi-Sleeper" ,"fare": 900,"seat":25 },
+{ "name": "YBM","boardingPoint": "Chennai","boarding_time": "08.00", "hours": "8hr", "drop_time": "18.00", "droppingPoint": "Namakkal","type":" Sleeper", "fare": 900,"seat":25 }, 
+{ "name": "PARVEEN","boardingPoint": "Chennai","boarding_time": "10.00", "hours": "8hr", "drop_time": "20.00", "droppingPoint": "Namakkal","type":"Sleeper", "fare": 900,"seat":25 },
+{ "name": "KPN","boardingPoint": "Chennai","boarding_time": "15.00", "hours": "8hr", "drop_time": "23.00", "droppingPoint": "Namakkal", "type":" Sleeper","fare": 900 ,"seat":25},
+{ "name": "SRM","boardingPoint": "Chennai","boarding_time": "20.00", "hours": "8hr", "drop_time": "04.00", "droppingPoint": "Namakkal","type":"Sleeper","fare": 900,"seat":25 }, 
+{ "name": "SRS","boardingPoint": "Chennai","boarding_time": "23.00", "hours": "8hr", "drop_time": "07.00", "droppingPoint": "Namakkal","type":"Sleeper", "fare": 900 ,"seat":25}]
 
     
